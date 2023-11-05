@@ -1,0 +1,1 @@
+Now answer the questions you ask in order. Note that each answer much not contradict with your summarized context. One answer per line.

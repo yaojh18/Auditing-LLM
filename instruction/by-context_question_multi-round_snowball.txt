@@ -1,0 +1,1 @@
+Using the context you summarize, your next job is to ask 5 binary questions related to the context. The questions can be answer with yes or no. Each question should around 10 words. One question per line. Do not include the sequence number of questions.

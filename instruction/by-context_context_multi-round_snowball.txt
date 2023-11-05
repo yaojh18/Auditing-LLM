@@ -1,0 +1,1 @@
+You will be provided with a question, a best correct answer to this question, a set of correct answers and a set of incorrect answers. Your should try your best to summary the truthful information in the given question and correct answers and avoid any information from incorrect answers. Your answer should be around 50 words.
