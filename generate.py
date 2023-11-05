@@ -2,8 +2,10 @@ import openai
 import time
 import json
 import argparse
-import pandas
 import os
+
+import pandas as pd
+import numpy as np
 
 # set your openai api key here
 # openai.api_key = "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"
@@ -189,8 +191,10 @@ if __name__ == '__main__':
 
     # read original dataset, instructions
     # TODO: Unify the format of original dataset
-    seed_data = pandas.read_csv("./dataset/{}.csv".format(args.seed_data))
+    np.random.seed(100)
+    seed_data = pd.read_csv("./dataset/{}.csv".format(args.seed_data))
     assert 1 <= args.trail_num <= len(seed_data)
+    seed_data = seed_data.sample(frac=1).reset_index(drop=True)
     seed_data = seed_data[: args.trail_num]
 
     # prompt augmentation
